@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6c75988e6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <!--header-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Imam <span>Ghazi</span> Khan</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Android and Web developer</p>
+                <h1>Hi, I'm Imam <br><span>Ghazi</span> Khan from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+
+    <div id="about">
+        <div class="container">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>An aspiring software development engineer, primarily interested in Android development, but always open to learning
+                        new and different tech stacks.
+                        Passionate about coding and solving problems with great interest in data structures and developing optimized algorithms.
+                        Intermediate at Java.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Android development</span><br>Java,Kotlin</li>
+                            <li><span>Web development</span><br>HTML,CSS,javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>9.185(of 4 sems) : Btech from RCC Institute of Information Technology</li>
+                            <li><span>2019</span><br>72.75% : Sunrise(Eng.Med)SChool</li>
+                            <li><span>2017</span><br>80.6% : Sunrise(Eng.Med)School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--projects-->
+
+    <div id="projects">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/newsapp.jpeg">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>Project Link</p>
+                        <a href="https://github.com/Imam-Ghazi-Khan/RetrofitJava"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/webvideoshortcut.jpeg">
+                    <div class="layer">
+                        <h3>Websites&Videos shortcut App</h3>
+                        <p>Project link</p>
+                        <a href="https://github.com/Imam-Ghazi-Khan/Websites-Videos-Shortcut"><i class="fa-solid fa-link"></i></a>
+                    </div>   
+                </div>
+                <div class="work">
+                    <img src="images/videoexoplayer.jpeg">
+                    <div class="layer">
+                        <h3>VideoExoplayer App</h3>
+                        <p>Project link</p>
+                        <a href="https://github.com/Imam-Ghazi-Khan/VideoExoplayer"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+             
+                
+            </div>  
+            <a href="https://github.com/Imam-Ghazi-Khan" class="btn">See more</a>  
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div id="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>@igkhan1710@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9748934665</p>
+                    <a href="docs/Resume_Imam Ghazi Khan.pdf" download class="btn btn2 btn3">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="social-icons">
+                        <a id="linkedin" href="https://www.linkedin.com/in/imam-ghazi-khan-661b5a1b7/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a id="github" href="https://github.com/Imam-Ghazi-Khan"><i class="fa-brands fa-github"></i></a>
+                        <a id="twitter" href="https://twitter.com/igkhan1710"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Imam Ghazi Khan</p>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
