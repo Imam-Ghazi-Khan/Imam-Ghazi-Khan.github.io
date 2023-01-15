@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins',sans-serif;
-    box-sizing: border-box;
 }
 
 #about{
@@ -354,7 +353,7 @@ nav .fas{
  
      form{
          margin-left:60px;
-         margin-right:175px;
+         margin-right:150px;
      }
  
      .btn4{
@@ -381,7 +380,6 @@ nav .fas{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
         transition: right 0.5s;
     }
 
