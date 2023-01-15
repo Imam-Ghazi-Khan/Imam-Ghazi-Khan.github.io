@@ -335,6 +335,7 @@ nav ul li a:hover::after{
 nav .fas{
     display: none;
 }
+
 /* for small screens */
 
 @media only screen and (max-width: 760px) {
