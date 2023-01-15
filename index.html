@@ -16,12 +16,14 @@
         <div class="container">
             <nav>
                 <h1>Imam <span>Ghazi</span> Khan</h1>
-                <ul>
+                <ul id="sidemenu"> 
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas  fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Android and Web developer</p>
@@ -130,5 +132,16 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Imam Ghazi Khan</p>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+        sidemenu.style.right = "-200px";
+        }   
+    </script>
 </body>
 </html>

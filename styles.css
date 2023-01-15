@@ -332,5 +332,69 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+nav .fas{
+    display: none;
+}
+/* for small screens */
 
+@media only screen and (max-width: 760px) {
+    #contact{
+        padding-left:20px;
+    }
+    .contact-left h1{
+        padding-left:120px;
+        font-size:60px;
+        font-weight:600
+    }
+    .contact-left p i{
+        font-size:20px;
+        padding-left:20px;
+    }
+ 
+     form{
+         margin-left:60px;
+         margin-right:175px;
+     }
+ 
+     .btn4{
+         margin-left:20px;
+         position:relative;
+         left:50px;
+     }
 
+    .btn3{
+        margin-left:120px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }     
+
+    nav ul{
+        background: #0A66C2;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    
+}
